@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Madhya Pradesh Tourism</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Madhya Pradesh Tourism</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Explore Our Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Image 1 -->
+            <div class="gallery-item">
+                <img src="khajuraho.jpg" alt="Image 1" onclick="openLightbox('khajuraho.jpg', 'Description of Image 1')">
+            </div>
+            <!-- Image 2 -->
+            <div class="gallery-item">
+                <img src="kanha.jpg" alt="Image 2" onclick="openLightbox('image2.jpg', 'Description of Image 2')">
+            </div>
+            <!-- Image 3 -->
+            <div class="gallery-item">
+                <img src="image3.jpg" alt="Image 3" onclick="openLightbox('image3.jpg', 'Description of Image 3')">
+            </div>
+            <!-- Image 4 -->
+            <div class="gallery-item">
+                <img src="image4.jpg" alt="Image 4" onclick="openLightbox('image4.jpg', 'Description of Image 4')">
+            </div>
+            <!-- More Images as needed -->
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="modal">
+        <span class="close-btn" onclick="closeLightbox()">×</span>
+        <div class="modal-content">
+            <img id="lightbox-image" src="" alt="Lightbox Image">
+            <p id="lightbox-description"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Madhya Pradesh Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>

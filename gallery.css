@@ -1,0 +1,160 @@
+/* Basic CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #2f4f4f;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #4caf50;
+}
+
+
+/* Gallery Section */
+
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.gallery-item {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Lightbox Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .cta-btn {
+        font-size: 1em;
+    }
+}

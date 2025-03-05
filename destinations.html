@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Madhya Pradesh Tourism</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Madhya Pradesh Tourism</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Destinations Section -->
+    <section id="destinations">
+        <h2>Explore Destinations in Madhya Pradesh</h2>
+        <div class="destination-list">
+            <!-- Destination 1 -->
+            <div class="destination" onclick="openDestinationModal('Khajuraho', 'Known for its temples and erotic sculptures, Khajuraho is a UNESCO World Heritage Site.')">
+                <img src="khajuraho.jpg" alt="Khajuraho Temples">
+                <h3>Khajuraho</h3>
+            </div>
+            <!-- Destination 2 -->
+            <div class="destination" onclick="openDestinationModal('Kanha National Park', 'Kanha is one of India\'s largest and most famous national parks, known for its tiger population.')">
+                <img src="kanha.jpg" alt="Kanha National Park">
+                <h3>Kanha National Park</h3>
+            </div>
+            <!-- Destination 3 -->
+            <div class="destination" onclick="openDestinationModal('Sanchi Stupa', 'Sanchi is known for the Sanchi Stupa, one of the oldest stone structures in India and a UNESCO site.')">
+                <img src="sanchi.jpg" alt="Sanchi Stupa">
+                <h3>Sanchi Stupa</h3>
+            </div>
+            <!-- Destination 4 -->
+            <div class="destination" onclick="openDestinationModal('Pachmarhi', 'Pachmarhi is a hill station known for its scenic beauty, waterfalls, and caves.')">
+                <img src="pachmarhi.jpg" alt="Pachmarhi">
+                <h3>Pachmarhi</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destination Modal -->
+    <div id="destination-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeDestinationModal()">×</span>
+            <h2 id="destination-title"></h2>
+            <p id="destination-description"></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Madhya Pradesh Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="destinations.js"></script>
+</body>
+
+</html>

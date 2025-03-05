@@ -1,0 +1,179 @@
+/* Basic CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header Styles */
+
+header {
+    background: #2f4f4f;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #4caf50;
+}
+
+
+/* Destinations Section */
+
+#destinations {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#destinations h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.destination-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.destination {
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.destination img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.destination h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #333;
+}
+
+.destination p {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #777;
+}
+
+
+/* Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .cta-btn {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Packages - Madhya Pradesh Tourism</title>
+    <link rel="stylesheet" href="package.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Madhya Pradesh Tourism</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html" class="active">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Packages Section -->
+    <section id="packages">
+        <h2>Travel Packages</h2>
+
+        <!-- Package 1 -->
+        <div class="package">
+            <img src="heritage-trail.jpg" alt="Heritage Trail Package">
+            <h3>Heritage Trail</h3>
+            <p>Duration: 5 days, 4 nights</p>
+            <p>Price: ₹15,000 per person</p>
+            <button class="book-btn" onclick="openBookingForm('Heritage Trail', '₹15,000')">Book Now</button>
+        </div>
+
+        <!-- Package 2 -->
+        <div class="package">
+            <img src="wildlife-adventure.jpg" alt="Wildlife Adventure">
+            <h3>Wildlife Adventure</h3>
+            <p>Duration: 7 days, 6 nights</p>
+            <p>Price: ₹25,000 per person</p>
+            <button class="book-btn" onclick="openBookingForm('Wildlife Adventure', '₹25,000')">Book Now</button>
+        </div>
+    </section>
+
+    <!-- Booking Form Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeBookingForm()">×</span>
+            <h2>Book Your Package</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="package-name">Package:</label>
+                <input type="text" id="package-name" name="package-name" readonly>
+
+                <label for="price">Price:</label>
+                <input type="text" id="price" name="price" readonly>
+
+                <button type="submit">Confirm Booking</button>
+            </form>
+            <div id="booking-message"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Madhya Pradesh Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="package.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header Section */
+
+header {
+    background: #2f4f4f;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #4caf50;
+}
+
+
+/* Login and Signup Section */
+
+#login-section {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4caf50;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    background: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #388e3c;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: #777;
+}
+
+span {
+    color: #4caf50;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+
+/* Footer Section */
+
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .cta-btn {
+        font-size: 1em;
+    }
+}

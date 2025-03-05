@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Madhya Pradesh Tourism</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Madhya Pradesh Tourism</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Us Section -->
+    <section id="contact">
+        <h2>Get In Touch</h2>
+
+        <div class="contact-form">
+            <form id="contact-form" action="#" method="POST" onsubmit="return validateForm()">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    <label for="name">Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    <label for="email">Email Address</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    <label for="phone">Phone Number</label>
+                </div>
+
+                <div class="input-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div id="form-message"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Madhya Pradesh Tourism. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>

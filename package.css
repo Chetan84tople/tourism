@@ -1,0 +1,271 @@
+/* Basic CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+
+/* Header Section */
+
+header {
+    background: #2f4f4f;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #4caf50;
+}
+
+
+/* Packages Section */
+
+#packages {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.package {
+    display: inline-block;
+    margin: 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.package img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.package h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.package p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+}
+
+.book-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+/* Login and Signup Section */
+
+#login-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.1em;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+form input:focus {
+    border-color: #4caf50;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    background: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #388e3c;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    color: #777;
+}
+
+span {
+    color: #4caf50;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+
+/* Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin: 10px 0 5px;
+}
+
+.modal-content input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.modal-content button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* Footer Section */
+
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .cta-btn {
+        font-size: 1em;
+    }
+    .package {
+        width: 90%;
+        margin: 10px 0;
+    }
+    .form-container {
+        padding: 20px;
+        width: 90%;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+}

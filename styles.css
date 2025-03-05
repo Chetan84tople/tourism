@@ -1,0 +1,135 @@
+/* Basic CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #2f4f4f;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #4caf50;
+}
+
+
+/* Hero Section */
+
+#hero {
+    background-image: url('mp.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+}
+
+.cta-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+
+/* About Section */
+
+#about {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+/* Destinations Section */
+
+#destinations {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.destination {
+    display: inline-block;
+    margin: 20px;
+}
+
+.destination img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.destination p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+/* Footer Styles */
+
+footer {
+    background-color: #2f4f4f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    header h1 {
+        font-size: 1.8em;
+    }
+    .cta-btn {
+        font-size: 1em;
+    }
+}
