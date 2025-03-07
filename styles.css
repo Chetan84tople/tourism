@@ -52,7 +52,7 @@ header nav ul li a.active {
 /* Hero Section */
 
 #hero {
-    background-image: url('');
+    background-image: url('.jpg');
     background-size: cover;
     color: white;
     text-align: center;
