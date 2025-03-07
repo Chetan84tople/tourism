@@ -54,7 +54,7 @@ header nav ul li a.active {
 #hero {
     background-image: url('image.jpg');
     background-size: cover;
-    color: black;
+    color: white;
     text-align: center;
     padding: 100px 0;
 }
@@ -65,7 +65,7 @@ header nav ul li a.active {
 
 .cta-btn {
     background-color: #ff6600;
-    color: white;
+    color: black;
     padding: 12px 30px;
     border-radius: 30px;
     text-decoration: none;
