@@ -54,7 +54,7 @@ header nav ul li a.active {
 #hero {
     background-image: url('image.jpg');
     background-size: cover;
-    color: white;
+    color: black;
     text-align: center;
     padding: 100px 0;
 }
